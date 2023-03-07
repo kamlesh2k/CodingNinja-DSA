@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+       Scanner sc = new Scanner(System.in);
+      int n, even=0,odd=0, rem;
+      int num=sc.nextInt();
+      n=num;
+      while(num>0)
+      {
+        rem=num%10;
+        if(rem%2==0)
+        {
+            even=even+rem;
+        }
+          else{
+              odd=odd+rem;
+          }
+        num=num/10;
+     }
+    System.out.print(even +" "+odd );
+	}
+}
